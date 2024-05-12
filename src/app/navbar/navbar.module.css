@@ -1,0 +1,12 @@
+.btnn{
+  /* background-color: radial-gradient(circle at center, #004FC5 0%, #FFFFFF 100%); */
+  background-color: #112037;
+  width: 125px;
+  height: 53px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+
+
+
