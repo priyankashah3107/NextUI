@@ -1,4 +1,6 @@
 import {Inter} from 'next/font/google'
+import styles from "../app/navbar/navbar.module.css"
+import { styleText } from 'util'
 const inter = Inter({
   subsets: ["latin"],
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"]
@@ -19,26 +21,43 @@ export default function HomePage() {
       <span className="text-[#585858]">for your business</span></h1>
       </div>
 
-        <div>
-          <img src="./card.png" alt="card" />
+        <div className=''>
+          {/* <img src="./cards.png" alt="card" /> */}
+          <img src="./cards.png " alt="card"  className="w-[459px] h-[293px]"/>
+          {/* <img src="./line.png" alt="" /> */}
         </div>
+       
     </div>
 
 
       {/* circle section */}
 
-      <div>
-        <div>Img</div>
+      <div className='mx-40 -mt-40 flex justify-around items-center'>
 
         <div>
+          <img src="./circle.png" alt="" className='w-[490px] h-[490px]'/>
+        </div>
+
+        <div className=''>
           <div>
-            <h1>text</h1>
-            <button>Talk to an Expert</button>
-            <button>Get API Keys</button>
+            <h1 className="w-[649px] text-white/opacity-60 text-xl font-light font-['Inter'] leading-9">Meet the new standard for a modern card platform <br />
+Launch your product, issue cards, and grow your revenue.</h1>
+             
+             <div className='flex items-center gap-10 mt-10 text-center' >
+             <button className={` w-[230px] h-[73px]  bg-gradient-to-b from-blue-900 via-blue-500 to-white rounded-[38px] shadow-inner justify-center items-center gap-[8px] inline-flex" cursor-pointer ` }>
+               <div className={`text-white text-xl font-semibold leading-10`}>Talk to an Expert</div>
+              </button>
+
+            <button className={`${styles.btnn} p-3 cursor-pointer`}>Get API Keys</button>
+             </div>
+           
+
           </div>
         </div>
       </div>
 
+
+   
     </div>
     </>
   )

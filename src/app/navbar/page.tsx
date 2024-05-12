@@ -68,7 +68,8 @@ const navLink = [
 
         <button className={`  hover:bg-[#112037] w-[125px] h-[53px] rounded-full text-white font-semibold leading-10 text-base`}>Sign in</button>
         <button className={`${styles.btnn}  text-white font-semibold leading-10 text-base`}>Read Docs</button>
-        <button className={`bg-gradient-to-b from-blue-900 via-blue-500 to-white w-[125px] h-[53px] rounded-full text-white font-semibold leading-10 text-base`}>Get Started</button>
+        {/* <button className={`bg-gradient-to-b from-blue-900 via-blue-500 to-white w-[125px] h-[53px] rounded-full text-white font-semibold leading-10 text-base`}>Get Started</button> */}
+        <button className={`${styles.btn}  font-semibold leading-10 text-base`}>Get Started</button>
        </div>
 
      </div>

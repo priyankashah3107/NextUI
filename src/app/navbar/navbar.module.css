@@ -7,6 +7,16 @@
   cursor: pointer;
 }
 
+.btn{
+  background: linear-gradient(to bottom, #61A0FF, #004FC5, #ffffff);
+  width: 125px;
+  height: 53px;
+  border-radius: 50px; 
+  color: #ffffff;
+  
+  /* line-height: 2.5rem; 
+  font-size: 1rem;  */
+}
 
 
 
