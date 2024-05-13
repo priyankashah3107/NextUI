@@ -1,12 +1,15 @@
 import {Inter} from 'next/font/google'
 import styles from "../app/navbar/navbar.module.css"
+import style from '../app/home.module.css'
 import { styleText } from 'util'
 const inter = Inter({
   subsets: ["latin"],
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"]
 })
 export default function HomePage() {
- 
+ // image mei loop laga ker fetch krna h aur 
+ // ye images code repeat ki jagah useState and UseEffect se kaise kre
+
   return (
     <> 
 
@@ -60,17 +63,42 @@ Launch your product, issue cards, and grow your revenue.</h1>
       
       {/* infinite logo carouse */}
 
-      <div className='bg-[#070614] w-[1000px] h-[84px] mx-40 md:mx-80  rounded-md items-center text-center '>
+      {/* <div className='bg-[#070614] w-[1000px] h-[84px] mx-40 md:mx-80  rounded-md items-center text-center  logos'>
            
-          <div className='flex mx-auto justify-around items-center text-center '>
+          <div className='flex mx-auto justify-around items-center text-center logo-slide '>
           <img src="./stripe.png" alt="" className='mt-7'/>
            <img src="./solarwind.png" alt=""  className='mt-7'/>
            <img src="./chase.png" alt="" className='mt-7' />
            <img src="./tencent.png" alt="" className='mt-7' />
            <img src="./stripe.png" alt=""  className='mt-7'/>
            <img src="./solarwind.png" alt="" className='mt-7' />
+
+          </div>
+      </div> */}
+
+
+         <div className={`bg-[#070614] ${style.logos}  ` } >
+           
+          <div className={style.logoslide }>
+          <img src="./stripe.png" alt="" />
+           <img src="./solarwind.png" alt=""  />
+           <img src="./chase.png" alt=""  />
+           <img src="./tencent.png" alt=""  />
+           <img src="./stripe.png" alt=""  />
+           <img src="./solarwind.png" alt=""  />
+
+          </div>
+
+          <div className={style.logoslide }>
+          <img src="./stripe.png" alt="" />
+           <img src="./solarwind.png" alt=""  />
+           <img src="./chase.png" alt=""  />
+           <img src="./tencent.png" alt=""  />
+           <img src="./stripe.png" alt=""  />
           </div>
       </div>
+
+      
    
     </div>
     </>
