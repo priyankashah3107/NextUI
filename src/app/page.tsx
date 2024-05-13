@@ -10,7 +10,7 @@ export default function HomePage() {
   return (
     <> 
 
-    <div className=''>
+    <div className='min-h-screen'>
 
     
     <div className="flex justify-between mx-16">
@@ -23,7 +23,8 @@ export default function HomePage() {
 
         <div className=''>
           {/* <img src="./cards.png" alt="card" /> */}
-          <img src="./cards.png " alt="card"  className="w-[459px] h-[293px]"/>
+
+          <img src="./cards.png " alt="card"  className=" w-[250px] h-[150px] md:w-[459px] md:h-[293px]"/>
           {/* <img src="./line.png" alt="" /> */}
         </div>
        
@@ -56,7 +57,20 @@ Launch your product, issue cards, and grow your revenue.</h1>
         </div>
       </div>
 
+      
+      {/* infinite logo carouse */}
 
+      <div className='bg-[#070614] w-[1000px] h-[84px] mx-40 md:mx-80  rounded-md items-center text-center '>
+           
+          <div className='flex mx-auto justify-around items-center text-center '>
+          <img src="./stripe.png" alt="" className='mt-7'/>
+           <img src="./solarwind.png" alt=""  className='mt-7'/>
+           <img src="./chase.png" alt="" className='mt-7' />
+           <img src="./tencent.png" alt="" className='mt-7' />
+           <img src="./stripe.png" alt=""  className='mt-7'/>
+           <img src="./solarwind.png" alt="" className='mt-7' />
+          </div>
+      </div>
    
     </div>
     </>
